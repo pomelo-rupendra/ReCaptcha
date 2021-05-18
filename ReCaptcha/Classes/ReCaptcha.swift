@@ -213,13 +213,13 @@ public class ReCaptcha {
 
     // MARK: - Development
 
-#if DEBUG
     /// Forces the challenge widget to be explicitly displayed.
     public var forceVisibleChallenge: Bool {
         get { return manager.forceVisibleChallenge }
         set { manager.forceVisibleChallenge = newValue }
     }
 
+#if DEBUG
     /**
      Allows validation stubbing for testing
 
